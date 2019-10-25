@@ -1,0 +1,38 @@
+{
+  "name": "@gamesdonequick/stylelint-config",
+  "version": "0.0.0-development",
+  "description": "GDQ's re-usable config for the Stylelint CSS linter.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GamesDoneQuick/stylelint-config.git"
+  },
+  "author": "Games Done Quick, LLC <engineering@gamesdonequick.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GamesDoneQuick/stylelint-config/issues"
+  },
+  "homepage": "https://github.com/GamesDoneQuick/stylelint-config#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@gamesdonequick/prettier-config": "^2.1.1",
+    "husky": "^3.0.9",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^2.0.0",
+    "semantic-release": "^15.13.27"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
