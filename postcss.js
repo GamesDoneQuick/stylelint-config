@@ -14,5 +14,5 @@ const POSSIBLE_ERRORS = {
 };
 
 module.exports = {
-  rules: { ...baseConfig.rules, ...POSSIBLE_ERRORS },
+  rules: { ...POSSIBLE_ERRORS },
 };
