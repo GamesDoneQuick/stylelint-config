@@ -26,7 +26,7 @@ const POSSIBLE_ERRORS = {
 };
 
 const LIMIT_LANGUAGE_FEATURES = {
-  'color-no-hex': true,
+  'color-no-hex': false,
   'function-url-no-scheme-relative': true,
   'shorthand-property-no-redundant-values': true,
   'value-no-vendor-prefix': true,
